@@ -1,0 +1,154 @@
+/* Custom Shared Styles for Shakti Royale B2B */
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+}
+
+/* Custom Thin Purple Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #FCFAF8;
+}
+::-webkit-scrollbar-thumb {
+    background: #6B2C91;
+    border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #4F1E73;
+}
+
+/* Playfair Display heading defaults */
+h1, h2, h3, h4, .font-display-lg, .font-display-md, .font-headline-lg {
+    font-family: 'Playfair Display', serif !important;
+}
+
+/* Custom Cursor */
+#custom-cursor {
+    transition: transform 0.1s ease-out, background-color 0.2s ease;
+}
+#custom-cursor-ring {
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Glassmorphism */
+.glass-card {
+    background: rgba(252, 250, 248, 0.7);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(107, 44, 145, 0.12);
+}
+
+/* Hover & Transitions */
+.hover-lift {
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s ease;
+}
+.hover-lift:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px -15px rgba(107, 44, 145, 0.12);
+}
+.glow-hover {
+    transition: all 0.3s ease;
+}
+.glow-hover:hover {
+    box-shadow: 0 0 25px rgba(107, 44, 145, 0.15);
+}
+
+/* Marquee / Continuous Infinite Scroll */
+.marquee-container {
+    overflow: hidden;
+    user-select: none;
+    display: flex;
+    gap: 4rem;
+}
+.marquee-content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    min-width: 100%;
+    animation: scroll 40s linear infinite;
+}
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+/* Text & Content Reveal on Scroll */
+.text-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+/* Scrollbars & Overflow */
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Gradients */
+.gradient-mask-t {
+    mask-image: linear-gradient(to top, black 80%, transparent 100%);
+}
+.gradient-overlay {
+    background: linear-gradient(to top, rgba(107, 44, 145, 0.8) 0%, rgba(107, 44, 145, 0.2) 60%, transparent 100%);
+}
+.gradient-mask-t-transparent {
+    mask-image: linear-gradient(to top, black 0%, transparent 100%);
+}
+
+/* Soft Glow Shadow */
+.shadow-soft-glow {
+    box-shadow: 0 10px 40px -10px rgba(107, 44, 145, 0.12);
+}
+
+/* Masonry Layout */
+.masonry {
+    column-count: 2;
+    column-gap: 24px;
+}
+@media (min-width: 1024px) {
+    .masonry { column-count: 3; }
+}
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 24px;
+}
+
+/* Form inputs & Wizard states */
+.floating-label-input:placeholder-shown + label {
+    opacity: 0;
+    transform: translateY(10px);
+}
+.floating-label-input:not(:placeholder-shown) + label {
+    opacity: 1;
+    transform: translateY(0);
+}
+.form-step-active {
+    display: block;
+    animation: fadeIn 0.4s ease-out forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* HTML Smooth Scroll override for Lenis compatibility */
+html.lenis {
+  height: auto;
+}
+.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis-stopped {
+  overflow: hidden;
+}
+.lenis-scrolling iframe {
+  pointer-events: none;
+}

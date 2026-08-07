@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shakti Royale | Dealer Portal &amp; Wholesale Registration</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Inter:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Montserrat:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/main.css">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#d5baff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-glass": "rgba(255, 255, 255, 0.7)",
+                        "on-background": "#121c2a",
+                        "on-surface-variant": "#4a4453",
+                        "outline-muted": "#ccc3d5",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#ffdad8",
+                        "surface-container-high": "#dfe9fc",
+                        "primary-fixed": "#ecdcff",
+                        "background": "#f8f9ff",
+                        "on-tertiary-fixed": "#410006",
+                        "surface-tint": "#7341c1",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#ebf1ff",
+                        "surface-bright": "#f8f9ff",
+                        "inverse-primary": "#d5baff",
+                        "primary-container": "#561ea3",
+                        "surface-dim": "#d0daee",
+                        "surface-container-highest": "#d9e3f7",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#91061c",
+                        "inverse-surface": "#27313f",
+                        "tertiary-fixed-dim": "#ffb3b0",
+                        "tertiary": "#61000e",
+                        "secondary-container": "#346cef",
+                        "on-error": "#ffffff",
+                        "primary": "#3d0081",
+                        "outline": "#7c7484",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#8b0019",
+                        "on-secondary-fixed-variant": "#003ea7",
+                        "surface-container": "#e6eeff",
+                        "on-primary-fixed-variant": "#5a24a7",
+                        "secondary-fixed": "#dbe1ff",
+                        "surface-container-low": "#eff3ff",
+                        "secondary": "#0051d5",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#d9e3f7",
+                        "surface": "#f8f9ff",
+                        "on-primary-fixed": "#270057",
+                        "secondary-fixed-dim": "#b4c5ff",
+                        "on-secondary-fixed": "#00174b",
+                        "outline-variant": "#ccc3d5",
+                        "on-secondary-container": "#fefcff",
+                        "on-tertiary-container": "#ff908e",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#121c2a",
+                        "on-primary-container": "#c29eff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "container-max": "1440px",
+                        "stack-lg": "48px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-desktop": "80px",
+                        "stack-md": "32px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Inter"],
+                        "display-lg": ["Montserrat"],
+                        "body-md": ["Inter"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "display-md": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-md": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed-dim selection:text-on-primary-fixed overflow-x-hidden">
+<!-- TopNavBar Shell -->
+<nav class="fixed top-0 w-full z-50 bg-[#FCFAF8]/85 backdrop-blur-md border-b border-[#6B2C91]/8 shadow-sm transition-all duration-500 ease-out h-24" id="mainNav">
+    <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-full max-w-container-max mx-auto">
+        <!-- Brand Logo & Subtitle -->
+        <div class="flex flex-col items-start justify-center shrink-0">
+            <a href="index.html" class="cursor-hover">
+                <img src="assets/images/logo.png" alt="Shakti Traders Logo" class="h-10 w-auto object-contain">
+            </a>
+            <span class="text-[7px] tracking-[0.18em] text-[#6B2C91]/70 uppercase font-bold mt-1.5 leading-none">EST. 1994 | MANUFACTURING EXCELLENCE</span>
+        </div>
+
+        <!-- Centered Navigation Links -->
+        <div class="hidden lg:flex items-center space-x-10">
+            <div class="relative group">
+                <a class="text-[#1A1A1A]/80 hover:text-[#6B2C91] font-label-caps text-label-caps transition-colors duration-300 flex items-center gap-1 cursor-hover font-semibold" href="collections.html">
+                    <span>Collections</span>
+                    <span class="material-symbols-outlined text-[16px]">keyboard_arrow_down</span>
+                </a>
+            </div>
+            <a class="text-[#1A1A1A]/80 hover:text-[#6B2C91] font-label-caps text-label-caps transition-colors duration-300 cursor-hover font-semibold" href="new-arrivals.html">Fabrics</a>
+            <a class="text-[#1A1A1A]/80 hover:text-[#6B2C91] font-label-caps text-label-caps transition-colors duration-300 cursor-hover font-semibold" href="about.html">About Us</a>
+            <a class="text-[#1A1A1A]/80 hover:text-[#6B2C91] font-label-caps text-label-caps transition-colors duration-300 cursor-hover font-semibold" href="wholesale-catalog.html">Wholesale</a>
+            <a class="text-[#6B2C91] font-label-caps text-label-caps transition-colors duration-300 cursor-hover font-bold" href="become-dealer.html#contact">Contact</a>
+        </div>
+
+        <!-- Trailing Actions -->
+        <div class="flex items-center space-x-6">
+            <div class="hidden md:flex items-center gap-5">
+                <a href="become-dealer.html" class="px-6 py-2.5 bg-[#6B2C91] text-white rounded-full font-label-caps text-[13px] font-bold hover:bg-[#4F1E73] hover:scale-105 transition-all duration-300 shadow-soft-glow flex items-center gap-2 cursor-hover">
+                    <span>Dealer Portal</span>
+                    <span class="material-symbols-outlined text-[18px]">person</span>
+                </a>
+                <a href="wholesale-catalog.html" class="text-[#1A1A1A]/80 hover:text-[#6B2C91] transition-colors cursor-hover">
+                    <span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- SideNavBar (Wholesale Hub) -->
+<aside class="fixed right-0 top-1/2 -translate-y-1/2 w-16 hover:w-64 transition-all duration-300 group rounded-l-xl z-40 bg-surface-container-highest/80 backdrop-blur-lg border-l border-white/20 shadow-2xl flex flex-col items-center py-stack-md space-y-gutter overflow-hidden">
+<div class="flex flex-col items-center py-stack-md space-y-gutter w-full">
+<div class="flex items-center w-full px-4 mb-4">
+<span class="material-symbols-outlined text-primary text-2xl shrink-0">store</span>
+<div class="ml-4 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+<p class="font-label-caps text-label-caps font-bold text-primary">SHAKTI TRADERS</p>
+<p class="text-[10px] text-outline">B2B SUPPORT</p>
+</div>
+</div>
+<a class="flex items-center w-full px-5 py-3 text-on-surface-variant hover:bg-surface-container-low transition-colors group/item" href="https://wa.me/919423124075" target="_blank">
+<span class="material-symbols-outlined text-secondary">chat</span>
+<span class="font-label-caps text-label-caps whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">WhatsApp Support</span>
+</a>
+<a class="flex items-center w-full px-5 py-3 text-on-surface-variant hover:bg-surface-container-low transition-colors group/item" href="wholesale-catalog.html">
+<span class="material-symbols-outlined text-secondary">download</span>
+<span class="font-label-caps text-label-caps whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Download Catalogue</span>
+</a>
+<a class="flex items-center w-full px-5 py-3 bg-primary text-on-primary transition-colors group/item" href="become-dealer.html">
+<span class="material-symbols-outlined">request_quote</span>
+<span class="font-label-caps text-label-caps whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Bulk Enquiry</span>
+</a>
+<div class="pt-10 opacity-0 group-hover:opacity-100 transition-opacity px-4 w-full">
+<a href="https://wa.me/919423124075" target="_blank" class="w-full py-3 bg-secondary text-on-secondary rounded-lg font-label-caps text-label-caps w-48 text-center inline-block">Direct Chat</a>
+</div>
+</div>
+</aside>
+<main class="pt-32 pb-margin-desktop">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-stack-lg text-center">
+<div class="inline-block px-4 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-caps text-label-caps mb-6 uppercase tracking-widest">Partner Program</div>
+<h1 class="font-display-md text-display-md text-primary mb-4">Apply for Wholesale Access</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Join the Shakti Royale network of elite retailers and boutique owners. Experience unparalleled quality and direct factory support.</p>
+</section>
+<!-- Multi-step Application Form -->
+<section class="max-w-4xl mx-auto px-margin-mobile mb-32 relative">
+<div class="glass-card rounded-3xl p-12 shadow-2xl">
+<div class="flex justify-between mb-12">
+<div class="flex items-center space-x-3">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold">1</div>
+<span class="font-label-caps text-label-caps text-primary">Business Profile</span>
+</div>
+<div class="h-0.5 w-16 bg-outline-variant mt-5 flex-grow mx-4 rounded-full"></div>
+<div class="flex items-center space-x-3 opacity-50">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-bold">2</div>
+<span class="font-label-caps text-label-caps">Logistics &amp; Volume</span>
+</div>
+<div class="h-0.5 w-16 bg-outline-variant mt-5 flex-grow mx-4 rounded-full"></div>
+<div class="flex items-center space-x-3 opacity-50">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-bold">3</div>
+<span class="font-label-caps text-label-caps">Documentation</span>
+</div>
+</div>
+<form class="space-y-10" id="contact">
+<!-- Step 1 Content -->
+<div class="form-step-active">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="relative">
+<input class="floating-label-input w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 text-body-lg py-4 transition-all outline-none peer" id="business_name" placeholder=" " type="text"/>
+<label class="absolute top-0 left-0 font-label-caps text-label-caps text-outline uppercase transition-all -translate-y-6 pointer-events-none" for="business_name">Business Registered Name</label>
+</div>
+<div class="relative">
+<input class="floating-label-input w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 text-body-lg py-4 transition-all outline-none peer" id="gst_number" placeholder=" " type="text"/>
+<label class="absolute top-0 left-0 font-label-caps text-label-caps text-outline uppercase transition-all -translate-y-6 pointer-events-none" for="gst_number">GST / Tax Identification</label>
+</div>
+<div class="relative md:col-span-2">
+<select class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 text-body-lg py-4 transition-all outline-none appearance-none" id="interest_areas">
+<option disabled="" selected="" value="">Primary Fabric Interest</option>
+<option>Premium Silks &amp; Brocades</option>
+<option>Organic Cottons &amp; Linens</option>
+<option>Embroidered Bridal Wear</option>
+<option>Sustainable Synthetic Blends</option>
+</select>
+<label class="absolute top-0 left-0 font-label-caps text-label-caps text-outline uppercase -translate-y-6" for="interest_areas">Core Product Categories</label>
+</div>
+<div class="relative md:col-span-2">
+<input class="floating-label-input w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 text-body-lg py-4 transition-all outline-none peer" id="volume" placeholder=" " type="number"/>
+<label class="absolute top-0 left-0 font-label-caps text-label-caps text-outline uppercase transition-all -translate-y-6 pointer-events-none" for="volume">Estimated Monthly Volume (in Meters)</label>
+</div>
+</div>
+</div>
+<div class="flex justify-between pt-6 border-t border-white/20">
+<p class="text-on-surface-variant font-label-caps text-label-caps py-3">Step 1 of 3: Company Basics</p>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-caps text-label-caps hover-lift shadow-lg flex items-center space-x-2" type="button">
+<span>Proceed to Logistics</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</section>
+<!-- Perks Section -->
+<section class="bg-surface-container-low py-32" id="privileges">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-display-md text-display-md text-primary mb-4">Elite Dealer Privileges</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Beyond procurement, we offer a partnership ecosystem designed for scale.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="glass-card p-10 rounded-2xl hover-lift group">
+<div class="w-16 h-16 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[40px]">precision_manufacturing</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-4 text-primary">Direct Factory Prices</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Cut out the middleman. Access tier-1 pricing structures typically reserved for high-volume international distributors.</p>
+</div>
+<div class="glass-card p-10 rounded-2xl hover-lift group">
+<div class="w-16 h-16 rounded-2xl bg-secondary-fixed flex items-center justify-center text-secondary mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[40px]">local_shipping</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-4 text-primary">Priority Logistics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Dedicated dispatch lanes ensuring your inventory is replenished ahead of consumer-grade shipping schedules.</p>
+</div>
+<div class="glass-card p-10 rounded-2xl hover-lift group">
+<div class="w-16 h-16 rounded-2xl bg-tertiary-fixed flex items-center justify-center text-tertiary-container mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[40px]">new_releases</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-4 text-primary">Early Access</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Sample new seasonal collections 30 days before they hit the open market. Stay ahead of regional fashion trends.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section (Accordion) -->
+<section class="max-w-4xl mx-auto px-margin-mobile py-32" id="terms">
+<h2 class="font-display-md text-display-md text-primary mb-12 text-center">B2B Terms &amp; FAQ</h2>
+<div class="space-y-4">
+<div class="border-b border-outline-variant py-6 group cursor-pointer" onclick="this.classList.toggle('active')">
+<div class="flex justify-between items-center">
+<h4 class="font-headline-lg text-headline-lg text-on-surface">What is the Minimum Order Quantity (MOQ)?</h4>
+<span class="material-symbols-outlined transition-transform duration-300 group-[.active]:rotate-180">expand_more</span>
+</div>
+<div class="max-h-0 overflow-hidden transition-all duration-300 group-[.active]:max-h-40 mt-4">
+<p class="text-on-surface-variant font-body-md">For wholesale accounts, we maintain a flexible MOQ starting at 50 meters per fabric type. Custom dye-lots require a minimum of 200 meters.</p>
+</div>
+</div>
+<div class="border-b border-outline-variant py-6 group cursor-pointer" onclick="this.classList.toggle('active')">
+<div class="flex justify-between items-center">
+<h4 class="font-headline-lg text-headline-lg text-on-surface">Do you offer credit terms for established retailers?</h4>
+<span class="material-symbols-outlined transition-transform duration-300 group-[.active]:rotate-180">expand_more</span>
+</div>
+<div class="max-h-0 overflow-hidden transition-all duration-300 group-[.active]:max-h-40 mt-4">
+<p class="text-on-surface-variant font-body-md">Yes, after three successful transactions within six months, registered dealers can apply for Net-30 payment terms subject to credit approval.</p>
+</div>
+</div>
+<div class="border-b border-outline-variant py-6 group cursor-pointer" onclick="this.classList.toggle('active')">
+<div class="flex justify-between items-center">
+<h4 class="font-headline-lg text-headline-lg text-on-surface">Can I request customized textile patterns?</h4>
+<span class="material-symbols-outlined transition-transform duration-300 group-[.active]:rotate-180">expand_more</span>
+</div>
+<div class="max-h-0 overflow-hidden transition-all duration-300 group-[.active]:max-h-40 mt-4">
+<p class="text-on-surface-variant font-body-md">Exclusivity is one of our key perks. We offer custom weaving and printing for orders exceeding 500 meters per design with a dedicated design consultant.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Visit Us Section with Interactive Map -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-32" id="contact">
+    <div class="text-center mb-16 text-reveal">
+        <span class="font-label-caps text-label-caps text-[#6B2C91] tracking-[0.2em] uppercase font-bold">OUR GLOBAL & PAN-INDIA NETWORK</span>
+        <h2 class="font-display-md text-display-md text-primary mt-2 mb-4">Visit Our Showrooms & Offices</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+            Experience our premium collections, review fabric quality, and consult with our wholesale team in person across our corporate and regional hub locations.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <!-- Left Side: Office Tabs Switcher -->
+        <div class="lg:col-span-4 flex flex-col gap-4">
+            <button onclick="switchOffice('amravati')" id="btn-amravati" class="office-tab-btn active text-left p-6 rounded-2xl border transition-all duration-300 bg-white border-[#6B2C91]/20 shadow-sm flex items-start gap-4">
+                <span class="material-symbols-outlined text-primary text-[24px] mt-0.5">store</span>
+                <div>
+                    <h4 class="font-bold text-[#1A1A1A]">Amravati (Head Office)</h4>
+                    <p class="text-[11px] text-[#1A1A1A]/60 mt-1 uppercase tracking-wider font-semibold">Showroom & Factory</p>
+                </div>
+            </button>
+            <button onclick="switchOffice('nagpur')" id="btn-nagpur" class="office-tab-btn text-left p-6 rounded-2xl border transition-all duration-300 bg-[#FCFAF8] border-[#6B2C91]/8 hover:bg-white flex items-start gap-4">
+                <span class="material-symbols-outlined text-[#6B2C91]/60 text-[24px] mt-0.5">location_on</span>
+                <div>
+                    <h4 class="font-bold text-[#1A1A1A]">Nagpur Branch</h4>
+                    <p class="text-[11px] text-[#1A1A1A]/60 mt-1 uppercase tracking-wider font-semibold">Mecosabagh Showroom</p>
+                </div>
+            </button>
+            <button onclick="switchOffice('mumbai')" id="btn-mumbai" class="office-tab-btn text-left p-6 rounded-2xl border transition-all duration-300 bg-[#FCFAF8] border-[#6B2C91]/8 hover:bg-white flex items-start gap-4">
+                <span class="material-symbols-outlined text-[#6B2C91]/60 text-[24px] mt-0.5">location_on</span>
+                <div>
+                    <h4 class="font-bold text-[#1A1A1A]">Mumbai Office</h4>
+                    <p class="text-[11px] text-[#1A1A1A]/60 mt-1 uppercase tracking-wider font-semibold">Fort Corporate Studio</p>
+                </div>
+            </button>
+            <button onclick="switchOffice('jaipur')" id="btn-jaipur" class="office-tab-btn text-left p-6 rounded-2xl border transition-all duration-300 bg-[#FCFAF8] border-[#6B2C91]/8 hover:bg-white flex items-start gap-4">
+                <span class="material-symbols-outlined text-[#6B2C91]/60 text-[24px] mt-0.5">location_on</span>
+                <div>
+                    <h4 class="font-bold text-[#1A1A1A]">Jaipur Branch</h4>
+                    <p class="text-[11px] text-[#1A1A1A]/60 mt-1 uppercase tracking-wider font-semibold">Jagatpura Sourcing Hub</p>
+                </div>
+            </button>
+            <button onclick="switchOffice('bali')" id="btn-bali" class="office-tab-btn text-left p-6 rounded-2xl border transition-all duration-300 bg-[#FCFAF8] border-[#6B2C91]/8 hover:bg-white flex items-start gap-4">
+                <span class="material-symbols-outlined text-[#6B2C91]/60 text-[24px] mt-0.5">language</span>
+                <div>
+                    <h4 class="font-bold text-[#1A1A1A]">Bali Office (Indonesia)</h4>
+                    <p class="text-[11px] text-[#1A1A1A]/60 mt-1 uppercase tracking-wider font-semibold">PT. Chrysthalia Athena</p>
+                </div>
+            </button>
+        </div>
+
+        <!-- Right Side: Active Office Details & Map Card -->
+        <div class="lg:col-span-8 bg-[#FCFAF8] border border-[#6B2C91]/12 rounded-[2.5rem] p-8 md:p-10 shadow-soft-glow flex flex-col md:flex-row gap-8 items-stretch">
+            <!-- Office Text Details -->
+            <div class="md:w-1/2 flex flex-col justify-between space-y-6">
+                <div class="space-y-4">
+                    <span id="office-badge" class="px-3 py-1 bg-[#6B2C91]/10 text-primary text-[10px] uppercase font-bold tracking-widest rounded-full w-fit block">HEADQUARTERS</span>
+                    <h3 id="office-name" class="font-serif text-3xl text-primary font-bold">Amravati Head Office</h3>
+                    <p id="office-desc" class="text-sm text-on-surface-variant leading-relaxed">
+                        Our main manufacturing hub and luxury children's wear showroom. This is where our primary wholesale operations, design drafting, and distribution logistics are managed.
+                    </p>
+                </div>
+
+                <div class="space-y-4 pt-4 border-t border-[#6B2C91]/8">
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">location_on</span>
+                        <div>
+                            <h5 class="font-bold text-xs text-[#1A1A1A] uppercase tracking-wide">Address</h5>
+                            <p id="office-addr" class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">
+                                Sahakar Nagar, Opp. New Cotton Market, Shiv Krupa Residence, Amravati, Maharashtra
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">call</span>
+                        <div>
+                            <h5 class="font-bold text-xs text-[#1A1A1A] uppercase tracking-wide">Contacts</h5>
+                            <p id="office-phone" class="text-xs text-on-surface-variant mt-0.5">
+                                Shankar: +91 94231 24075<br/>Rajkumar: +91 94228 55203
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">link</span>
+                        <div>
+                            <h5 class="font-bold text-xs text-[#1A1A1A] uppercase tracking-wide">Direct Directions</h5>
+                            <a id="office-maps-link" href="https://maps.app.goo.gl/qpyjss7Tg3ZQnrCS9" target="_blank" class="text-primary hover:underline text-xs font-semibold flex items-center gap-1 mt-0.5">
+                                <span>Open in Google Maps App</span>
+                                <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Container -->
+            <div class="md:w-1/2 rounded-[2rem] overflow-hidden border border-[#6B2C91]/12 min-h-[300px] md:min-h-full relative shadow-inner bg-white">
+                <div id="map-iframe-container" class="w-full h-full">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.3353538044885!2d77.79237967525565!3d20.994060880646654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd6a34d553551c9%3A0x7348312d0c9a2a4c!2sSHAKTI%20TRADERS!5e1!3m2!1sen!2sin!4v1785750685984!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <div id="map-placeholder" class="hidden absolute inset-0 bg-[#FCFAF8] flex flex-col items-center justify-center p-6 text-center">
+                    <span class="material-symbols-outlined text-primary text-[48px] animate-pulse">language</span>
+                    <h5 class="font-bold text-sm text-[#1A1A1A] mt-4">International Location</h5>
+                    <p class="text-[11px] text-on-surface-variant mt-2 max-w-[200px] leading-relaxed">
+                        Export office in Bali, Indonesia. Contact our global coordinators via WhatsApp for export procedures.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Switch Office JS Logic -->
+<script>
+    const offices = {
+        amravati: {
+            badge: "HEADQUARTERS",
+            name: "Amravati Head Office",
+            desc: "Our main manufacturing hub and luxury children's wear showroom. This is where our primary wholesale operations, design drafting, and distribution logistics are managed.",
+            addr: "Sahakar Nagar, Opp. New Cotton Market, Shiv Krupa Residence, Amravati, Maharashtra",
+            phone: "Shankar: +91 94231 24075<br/>Rajkumar: +91 94228 55203",
+            mapsLink: "https://maps.app.goo.gl/qpyjss7Tg3ZQnrCS9",
+            iframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.3353538044885!2d77.79237967525565!3d20.994060880646654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd6a34d553551c9%3A0x7348312d0c9a2a4c!2sSHAKTI%20TRADERS!5e1!3m2!1sen!2sin!4v1785750685984!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>'
+        },
+        nagpur: {
+            badge: "REGIONAL SHOWROOM",
+            name: "Nagpur Showroom",
+            desc: "Serving central India's boutique retailers. Our Nagpur showroom showcases ready-to-ship cotton co-ords, modern western drops, and ethnic heritage wear.",
+            addr: "C-6, Mecosabagh Sindhi Colony, Nagpur, Maharashtra",
+            phone: "Shankar: +91 94231 24075<br/>Rajkumar: +91 94228 55203",
+            mapsLink: "https://maps.google.com/?q=C-6,+Mecosabagh+Sindhi+Colony,+Nagpur,+Maharashtra",
+            iframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.6558231267496!2d79.0838186!3d21.166127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c1256bb8dd7f%3A0x356e9c9c82c2a0bf!2sMecosabagh%20Sindhi%20Colony%2C%20Nagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1785750000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>'
+        },
+        mumbai: {
+            badge: "CORPORATE STUDIO",
+            name: "Mumbai Showroom & Office",
+            desc: "Our primary export corporate office and high-end design showroom situated in the heart of Mumbai's financial and fashion district.",
+            addr: "LV, 3rd Floor, Maharashtra Bhavan, Bora Bazar, Behind Old Handloom House, Fort, Mumbai, Maharashtra",
+            phone: "Shankar: +91 94231 24075<br/>Rajkumar: +91 94228 55203",
+            mapsLink: "https://maps.google.com/?q=Maharashtra+Bhavan,+Bora+Bazar,+Fort,+Mumbai",
+            iframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.8647006859556!2d72.8347746!3d18.9373955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1db0e090ec9%3A0xb3de5ff89c629fb8!2sBora%20Bazar%20St%2C%20Fort%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1785750000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>'
+        },
+        jaipur: {
+            badge: "SOURCING & REGIONAL SHOWROOM",
+            name: "Jaipur Sourcing Office",
+            desc: "Located near retail clusters in Jaipur. This office handles sourcing for high-quality cotton fabrics, prints, and north-Indian traditional design curations.",
+            addr: "405, 4th Floor, Redwood Nebula, Jagatpura, Near D-Mart, Jaipur, Rajasthan",
+            phone: "Shankar: +91 94231 24075<br/>Rajkumar: +91 94228 55203",
+            mapsLink: "https://maps.google.com/?q=Redwood+Nebula,+Jagatpura,+Jaipur,+Rajasthan",
+            iframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.4259828551224!2d75.86427!3d26.826315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db7ae23ab0efd%3A0xe543ef625a243e8d!2sRedwood%20Nebula%2C%20Jagatpura%2C%20Jaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1785750000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>'
+        },
+        bali: {
+            badge: "INTERNATIONAL OFFICE",
+            name: "Bali Office (PT. Chrysthalia Athena Sejahtera)",
+            desc: "Our international liaison office in Indonesia. Managing global exports, distribution logs, and coordinating shipments for East-Asian boutique retail networks.",
+            addr: "PT. Chrysthalia Athena Sejahtera, Komplek Perhotelan Viking, Jalan Diponegoro, Denpasar, Bali, Indonesia",
+            phone: "Shankar: +91 94231 24075<br/>Rajkumar: +91 94228 55203",
+            mapsLink: "https://maps.google.com/?q=Jalan+Diponegoro,+Denpasar,+Bali,+Indonesia",
+            iframe: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.387930800845!2d115.210000!3d-8.670000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2409bb1bbbbbb%3A0xbbbbbbbbbbbbbbbb!2sJl.%20Diponegoro%2C%20Denpasar%2C%20Bali%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1785750000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>'
+        }
+    };
+
+    function switchOffice(key) {
+        document.querySelectorAll('.office-tab-btn').forEach(btn => {
+            btn.classList.remove('active', 'bg-white', 'border-[#6B2C91]/20', 'shadow-sm');
+            btn.classList.add('bg-[#FCFAF8]', 'border-[#6B2C91]/8');
+            const icon = btn.querySelector('.material-symbols-outlined');
+            if (icon) icon.className = 'material-symbols-outlined text-[#6B2C91]/60 text-[24px] mt-0.5';
+        });
+
+        const activeBtn = document.getElementById('btn-' + key);
+        if (activeBtn) {
+            activeBtn.classList.remove('bg-[#FCFAF8]', 'border-[#6B2C91]/8');
+            activeBtn.classList.add('active', 'bg-white', 'border-[#6B2C91]/20', 'shadow-sm');
+            const icon = activeBtn.querySelector('.material-symbols-outlined');
+            if (icon) icon.className = 'material-symbols-outlined text-primary text-[24px] mt-0.5';
+        }
+
+        const info = offices[key];
+        document.getElementById('office-badge').innerText = info.badge;
+        document.getElementById('office-name').innerText = info.name;
+        document.getElementById('office-desc').innerText = info.desc;
+        document.getElementById('office-addr').innerText = info.addr;
+        document.getElementById('office-phone').innerHTML = info.phone;
+        document.getElementById('office-maps-link').setAttribute('href', info.mapsLink);
+
+        const mapContainer = document.getElementById('map-iframe-container');
+        const mapPlaceholder = document.getElementById('map-placeholder');
+        
+        if (info.iframe) {
+            mapContainer.innerHTML = info.iframe;
+            mapContainer.classList.remove('hidden');
+            mapPlaceholder.classList.add('hidden');
+        } else {
+            mapContainer.innerHTML = '';
+            mapContainer.classList.add('hidden');
+            mapPlaceholder.classList.remove('hidden');
+        }
+    }
+</script>
+
+<!-- Direct Support CTA -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-32">
+<div class="relative overflow-hidden rounded-[40px] bg-primary-container p-16 text-center text-on-primary">
+<div class="relative z-10">
+<h2 class="font-display-md text-display-md mb-6">Need Registration Assistance?</h2>
+<p class="font-body-lg text-body-lg mb-10 max-w-2xl mx-auto opacity-90">Our dedicated account managers are available via WhatsApp to help you through the documentation process or discuss custom bulk requirements.</p>
+<a class="inline-flex items-center space-x-3 bg-[#25D366] text-white px-10 py-5 rounded-full font-label-caps text-label-caps hover:scale-105 transition-transform shadow-2xl" href="https://wa.me/919423124075" target="_blank">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span>Chat with Wholesale Support</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<!-- PREMIUM FOOTER -->
+<footer class="bg-[#FCFAF8] text-[#1A1A1A] relative overflow-hidden border-t border-[#6B2C91]/12 pt-24 pb-10">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Top Section -->
+<div class="grid grid-cols-12 gap-10 mb-20">
+<!-- Brand Column -->
+<div class="col-span-12 md:col-span-5 lg:col-span-4 space-y-7">
+<div class="flex items-center gap-4">
+<a href="index.html" class="inline-block cursor-hover">
+    <img src="assets/images/logo.png" alt="Shakti Traders Logo" class="h-16 w-auto object-contain">
+</a>
+</div>
+<h3 class="font-serif italic text-[28px] text-[#6B2C91] leading-tight">Shakti Traders</h3>
+<p class="text-[#1A1A1A]/60 text-[14px] leading-relaxed max-w-sm">Manufacturing legacy since 1994. Curating premium kids' wear for India's most discerning retailers — blending tradition with contemporary luxury.</p>
+<!-- Socials -->
+<div class="flex items-center gap-3 pt-2">
+<a href="https://wa.me/919423124075" target="_blank" class="w-10 h-10 rounded-full border border-[#6B2C91]/20 flex items-center justify-center text-[#6B2C91]/70 hover:bg-[#6B2C91] hover:border-[#6B2C91] hover:text-white transition-all duration-300 cursor-hover">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+</a>
+<a href="#" class="w-10 h-10 rounded-full border border-[#6B2C91]/20 flex items-center justify-center text-[#6B2C91]/70 hover:bg-[#6B2C91] hover:border-[#6B2C91] hover:text-white transition-all duration-300 cursor-hover">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+</a>
+<a href="#" class="w-10 h-10 rounded-full border border-[#6B2C91]/20 flex items-center justify-center text-[#6B2C91]/70 hover:bg-[#6B2C91] hover:border-[#6B2C91] hover:text-white transition-all duration-300 cursor-hover">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+</a>
+</div>
+</div>
+
+<!-- Quick Links -->
+<div class="col-span-6 md:col-span-3 lg:col-span-2 space-y-6">
+<h5 class="text-[#6B2C91] font-display font-bold text-[15px] tracking-wide">Company</h5>
+<nav class="flex flex-col space-y-3.5">
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="about.html">About Us</a>
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="about.html#factory">Our Factory</a>
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="collections.html">Collections</a>
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="become-dealer.html">Careers</a>
+</nav>
+</div>
+
+<!-- Wholesale -->
+<div class="col-span-6 md:col-span-3 lg:col-span-2 space-y-6">
+<h5 class="text-[#6B2C91] font-display font-bold text-[15px] tracking-wide">Wholesale</h5>
+<nav class="flex flex-col space-y-3.5">
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="wholesale-catalog.html">Bulk Catalogue</a>
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="become-dealer.html">Become Dealer</a>
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="new-arrivals.html#shipping">Shipping Info</a>
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="become-dealer.html#terms">Terms of Service</a>
+</nav>
+</div>
+
+<!-- Contact -->
+<div class="col-span-12 lg:col-span-4 space-y-6">
+<h5 class="text-[#6B2C91] font-display font-bold text-[15px] tracking-wide">Headquarters</h5>
+<div class="space-y-4 text-[14px] text-[#1A1A1A]/60">
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[#6B2C91] text-[20px] mt-0.5">location_on</span>
+<p>Sahakar Nagar, Opp. New Cotton Market,<br/>Shiv Krupa Residence, Amravati, MH</p>
+</div>
+<div class="flex items-center gap-3.5">
+<span class="material-symbols-outlined text-[#6B2C91] text-[20px]">mail</span>
+<a href="mailto:wholesale@shaktiroyale.com" class="hover:text-[#6B2C91] transition-colors cursor-hover">wholesale@shaktiroyale.com</a>
+</div>
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[#6B2C91] text-[20px] mt-0.5">call</span>
+<div class="flex flex-col text-[14px]">
+<a href="tel:+919423124075" class="hover:text-[#6B2C91] transition-colors cursor-hover">Shankar: +91 94231 24075</a>
+<a href="tel:+919422855203" class="hover:text-[#6B2C91] transition-colors cursor-hover">Rajkumar: +91 94228 55203</a>
+</div>
+</div>
+</div>
+<!-- Newsletter -->
+<div class="pt-4">
+<p class="text-[12px] uppercase tracking-[0.15em] text-[#1A1A1A]/40 font-semibold mb-3">Get New Arrivals</p>
+<div class="flex gap-2">
+<input type="email" placeholder="Your email" class="flex-1 px-4 py-3 bg-[#FCFAF8] border border-[#6B2C91]/20 rounded-full text-[13px] text-[#1A1A1A] placeholder:text-[#1A1A1A]/30 focus:outline-none focus:border-[#6B2C91]/50 transition-colors">
+<button class="px-5 py-3 bg-[#6B2C91] hover:bg-[#4F1E73] rounded-full transition-colors cursor-hover">
+<span class="material-symbols-outlined text-white text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Bottom Bar -->
+<div class="pt-8 pb-2 border-t border-[#6B2C91]/12 flex flex-col md:flex-row justify-between items-center gap-5">
+<p class="text-[12px] text-[#1A1A1A]/40">© 2026 Shakti Traders. All Rights Reserved.</p>
+<div class="flex flex-wrap gap-6 text-[12px] text-[#1A1A1A]/40 justify-center">
+<a class="hover:text-[#6B2C91] transition-colors cursor-hover" href="become-dealer.html#privacy">Privacy Policy</a>
+<a class="hover:text-[#6B2C91] transition-colors cursor-hover" href="become-dealer.html#terms">Terms of Service</a>
+<a class="hover:text-[#6B2C91] transition-colors cursor-hover" href="new-arrivals.html#shipping">Shipping Policy</a>
+<a class="hover:text-[#6B2C91] transition-colors cursor-hover" href="become-dealer.html#contact">Contact</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Lenis Smooth Scroll -->
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+        // Form Step Animation Logic
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('mousedown', () => {
+                btn.style.transform = 'scale(0.98)';
+            });
+            btn.addEventListener('mouseup', () => {
+                btn.style.transform = '';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>New Arrivals | Shakti Royale B2B</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/main.css">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#6B2C91",
+                        "primary-dark": "#4F1E73",
+                        "primary-light": "#F7F2FB",
+                        "accent-gold": "#D4AF37",
+                        "text-dark": "#1A1A1A",
+                        "text-muted": "#555555",
+                        "cream": "#FCFAF8",
+                        "beige": "#F5F0E8",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-glass": "rgba(252, 250, 248, 0.75)",
+                        "on-background": "#1A1A1A",
+                        "on-surface-variant": "#555555",
+                        "outline-muted": "#E5DEE8",
+                        "surface-container-high": "#F6F2FA",
+                        "primary-fixed": "#EFE2F7",
+                        "background": "#FCFAF8",
+                        "surface": "#FFFFFF",
+                        "outline-variant": "#D4C9D9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "4xl": "2rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "container-max": "1440px",
+                        "stack-lg": "48px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-desktop": "80px",
+                        "stack-md": "32px"
+                    },
+                    "fontFamily": {
+                        "sans": ["Inter"],
+                        "display": ["Playfair Display", "serif"],
+                        "serif": ["Playfair Display", "serif"],
+                        "elegant": ["Playfair Display", "serif"],
+                        "label-caps": ["Inter"],
+                        "display-lg": ["Playfair Display", "serif"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Playfair Display", "serif"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "600" }],
+                        "display-lg": ["82px", { "lineHeight": "88px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+                        "body-md": ["15px", { "lineHeight": "26px", "fontWeight": "400" }],
+                        "display-md": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+                        "body-lg": ["17px", { "lineHeight": "30px", "fontWeight": "400" }],
+                        "headline-lg": ["34px", { "lineHeight": "42px", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary/20 selection:text-primary overflow-x-hidden">
+<!-- Luxury Loading Screen -->
+<div id="loader" class="fixed inset-0 z-[9999] bg-[#FCFAF8] flex flex-col items-center justify-center transition-all duration-1000">
+    <div class="flex flex-col items-center gap-6">
+        <img src="assets/images/logo.png" alt="Shakti Royale Logo" class="h-20 w-auto object-contain animate-pulse">
+        <div class="w-48 h-0.5 bg-[#6B2C91]/10 rounded-full overflow-hidden">
+            <div id="loader-bar" class="w-0 h-full bg-[#6B2C91] transition-all duration-[1500ms] ease-out"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Custom Cursor -->
+<div id="custom-cursor" class="fixed w-2.5 h-2.5 bg-[#6B2C91] rounded-full pointer-events-none z-[9999] -translate-x-1/2 -translate-y-1/2 transition-transform duration-100 ease-out hidden md:block"></div>
+<div id="custom-cursor-ring" class="fixed w-8 h-8 border border-[#6B2C91]/40 rounded-full pointer-events-none z-[9999] -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-out hidden md:block"></div>
+<!-- TopNavBar Shell -->
+<nav class="fixed top-0 w-full z-50 bg-[#FCFAF8]/85 backdrop-blur-md border-b border-[#6B2C91]/8 shadow-sm transition-all duration-500 ease-out h-24" id="mainNav">
+    <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-full max-w-container-max mx-auto">
+        <!-- Brand Logo & Subtitle -->
+        <div class="flex flex-col items-start justify-center shrink-0">
+            <a href="index.html" class="cursor-hover">
+                <img src="assets/images/logo.png" alt="Shakti Traders Logo" class="h-10 w-auto object-contain">
+            </a>
+            <span class="text-[7px] tracking-[0.18em] text-[#6B2C91]/70 uppercase font-bold mt-1.5 leading-none">EST. 1994 | MANUFACTURING EXCELLENCE</span>
+        </div>
+
+        <!-- Centered Navigation Links -->
+        <div class="hidden lg:flex items-center space-x-10">
+            <div class="relative group">
+                <a class="text-[#1A1A1A]/80 hover:text-[#6B2C91] font-label-caps text-label-caps transition-colors duration-300 flex items-center gap-1 cursor-hover font-semibold" href="collections.html">
+                    <span>Collections</span>
+                    <span class="material-symbols-outlined text-[16px]">keyboard_arrow_down</span>
+                </a>
+            </div>
+            <a class="text-[#6B2C91] font-label-caps text-label-caps transition-colors duration-300 cursor-hover font-bold" href="new-arrivals.html">Fabrics</a>
+            <a class="text-[#1A1A1A]/80 hover:text-[#6B2C91] font-label-caps text-label-caps transition-colors duration-300 cursor-hover font-semibold" href="about.html">About Us</a>
+            <a class="text-[#1A1A1A]/80 hover:text-[#6B2C91] font-label-caps text-label-caps transition-colors duration-300 cursor-hover font-semibold" href="wholesale-catalog.html">Wholesale</a>
+            <a class="text-[#1A1A1A]/80 hover:text-[#6B2C91] font-label-caps text-label-caps transition-colors duration-300 cursor-hover font-semibold" href="become-dealer.html#contact">Contact</a>
+        </div>
+
+        <!-- Trailing Actions -->
+        <div class="flex items-center space-x-6">
+            <div class="hidden md:flex items-center gap-5">
+                <a href="become-dealer.html" class="px-6 py-2.5 bg-[#6B2C91] text-white rounded-full font-label-caps text-[13px] font-bold hover:bg-[#4F1E73] hover:scale-105 transition-all duration-300 shadow-soft-glow flex items-center gap-2 cursor-hover">
+                    <span>Dealer Portal</span>
+                    <span class="material-symbols-outlined text-[18px]">person</span>
+                </a>
+                <a href="wholesale-catalog.html" class="text-[#1A1A1A]/80 hover:text-[#6B2C91] transition-colors cursor-hover">
+                    <span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- SideNavBar (Wholesale Hub) -->
+<aside class="fixed right-0 top-1/2 -translate-y-1/2 w-16 hover:w-64 transition-all duration-300 rounded-l-xl z-40 bg-surface-container-highest/80 backdrop-blur-lg border-l border-white/20 shadow-2xl group overflow-hidden">
+<div class="flex flex-col items-center py-stack-md space-y-gutter">
+<div class="flex items-center w-full px-4 mb-4">
+<span class="material-symbols-outlined text-primary text-2xl shrink-0">store</span>
+<div class="ml-4 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+<p class="font-label-caps text-label-caps font-bold text-primary">SHAKTI TRADERS</p>
+<p class="text-[10px] text-outline">B2B SUPPORT</p>
+</div>
+</div>
+<a class="flex items-center w-full px-5 py-3 text-on-surface-variant hover:bg-surface-container-low transition-colors group/item" href="https://wa.me/919423124075" target="_blank">
+<span class="material-symbols-outlined">chat</span>
+<span class="ml-6 font-label-caps text-label-caps opacity-0 group-hover:opacity-100 whitespace-nowrap transition-opacity">WhatsApp Support</span>
+</a>
+<a class="flex items-center w-full px-5 py-3 text-on-surface-variant hover:bg-surface-container-low transition-colors group/item" href="wholesale-catalog.html">
+<span class="material-symbols-outlined">download</span>
+<span class="ml-6 font-label-caps text-label-caps opacity-0 group-hover:opacity-100 whitespace-nowrap transition-opacity">Download Catalogue</span>
+</a>
+<a class="flex items-center w-full px-5 py-3 text-on-surface-variant hover:bg-surface-container-low transition-colors group/item" href="become-dealer.html">
+<span class="material-symbols-outlined">request_quote</span>
+<span class="ml-6 font-label-caps text-label-caps opacity-0 group-hover:opacity-100 whitespace-nowrap transition-opacity">Bulk Enquiry</span>
+</a>
+<div class="pt-10 opacity-0 group-hover:opacity-100 transition-opacity px-4 w-full">
+<a href="https://wa.me/919423124075" target="_blank" class="w-full py-3 bg-secondary text-on-secondary rounded-lg font-label-caps text-[10px] tracking-widest uppercase inline-block text-center">Direct Chat</a>
+</div>
+</div>
+</aside>
+<main>
+<!-- Hero Section: High Editorial -->
+<section class="relative h-[921px] flex items-center overflow-hidden bg-white">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent z-10"></div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-20 w-full grid grid-cols-2 gap-gutter items-center">
+<div class="flex flex-col gap-stack-md">
+<span class="font-label-caps text-label-caps text-secondary tracking-[0.3em] uppercase">Limited Release</span>
+<h1 class="font-display-lg text-display-lg text-primary leading-none">Summer 2024 Drop</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">Discover the pinnacle of artisanal craftsmanship. Our new collection features sustainable silks and hand-woven linens designed for the high-end boutique market.</p>
+<div class="flex gap-gutter mt-4">
+<a href="become-dealer.html" class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-caps text-label-caps hover:scale-105 transition-all shadow-lg text-center inline-block">Pre-order for Bulk</a>
+<a href="collections.html" class="border-2 border-primary text-primary px-10 py-4 rounded-full font-label-caps text-label-caps hover:bg-primary hover:text-white transition-all text-center inline-block">View Lookbook</a>
+</div>
+</div>
+<div class="relative group h-[600px]">
+<div class="absolute -inset-4 bg-primary-fixed-dim/20 rounded-3xl blur-3xl group-hover:bg-primary-fixed-dim/40 transition-all duration-700"></div>
+<img class="relative z-10 w-full h-full object-contain bg-white rounded-2xl shadow-2xl transition-transform duration-700 group-hover:scale-[1.02]" src="assets/images/WhatsApp Image 2026-08-02 at 12.19.36 AM (1).jpeg"/>
+</div>
+</div>
+</section>
+<!-- Horizontal Parallax Range -->
+<section class="py-stack-lg bg-surface-container-low overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-stack-md flex justify-between items-end">
+<div>
+<h2 class="font-display-md text-display-md text-primary">The Curated Line</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Available for wholesale distribution from June 1st.</p>
+</div>
+<div class="flex gap-4">
+<button id="parallax-prev" class="w-12 h-12 rounded-full border border-outline flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button id="parallax-next" class="w-12 h-12 rounded-full border border-outline flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex gap-gutter px-[80px] parallax-container cursor-grab active:cursor-grabbing pb-12 overflow-x-auto hide-scrollbar snap-x snap-mandatory" id="parallax-scroll">
+<!-- Product Card 1 -->
+<div class="min-w-[400px] group snap-start">
+<div class="relative h-[500px] overflow-hidden rounded-2xl mb-6">
+<img class="w-full h-full object-contain bg-white transition-transform duration-1000 group-hover:scale-110" src="assets/images/babycool-1.jpeg"/>
+<div class="absolute top-4 right-4 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-caps text-label-caps">MOQ: 10 Sets</div>
+<div class="absolute bottom-0 left-0 right-0 p-6 gradient-overlay text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+<p class="font-label-caps text-label-caps mb-2">Delivery: 14 Days</p>
+<a href="become-dealer.html" class="w-full py-3 bg-white text-primary rounded-lg font-bold block text-center">Request Sample</a>
+</div>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary">BabyCool Purple Cargo Set</h3>
+<p class="text-on-surface-variant font-body-md">Premium Cotton Knit • Set of 2</p>
+</div>
+<!-- Product Card 2 -->
+<div class="min-w-[400px] group snap-start">
+<div class="relative h-[500px] overflow-hidden rounded-2xl mb-6">
+<img class="w-full h-full object-contain bg-white transition-transform duration-1000 group-hover:scale-110" src="assets/images/babycool-2.jpeg"/>
+<div class="absolute top-4 right-4 bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full font-label-caps text-label-caps">MOQ: 10 Sets</div>
+<div class="absolute bottom-0 left-0 right-0 p-6 gradient-overlay text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+<p class="font-label-caps text-label-caps mb-2">Delivery: 21 Days</p>
+<a href="become-dealer.html" class="w-full py-3 bg-white text-primary rounded-lg font-bold block text-center">Request Sample</a>
+</div>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary">BabyCool Lime Green Set</h3>
+<p class="text-on-surface-variant font-body-md">Artisanal Cotton Linen • Set of 3</p>
+</div>
+<!-- Product Card 3 -->
+<div class="min-w-[400px] group snap-start">
+<div class="relative h-[500px] overflow-hidden rounded-2xl mb-6">
+<img class="w-full h-full object-contain bg-white transition-transform duration-1000 group-hover:scale-110" src="assets/images/babycool-3.jpeg"/>
+<div class="absolute top-4 right-4 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-caps text-label-caps">MOQ: 10 Sets</div>
+<div class="absolute bottom-0 left-0 right-0 p-6 gradient-overlay text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+<p class="font-label-caps text-label-caps mb-2">Delivery: 10 Days</p>
+<a href="become-dealer.html" class="w-full py-3 bg-white text-primary rounded-lg font-bold block text-center">Request Sample</a>
+</div>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary">BabyCool Floral Blouse Set</h3>
+<p class="text-on-surface-variant font-body-md">Premium Soft Cotton • Set of 2</p>
+</div>
+<!-- Product Card 4 -->
+<div class="min-w-[400px] group snap-start">
+<div class="relative h-[500px] overflow-hidden rounded-2xl mb-6">
+<img class="w-full h-full object-contain bg-white transition-transform duration-1000 group-hover:scale-110" src="assets/images/babycool-5.jpeg"/>
+<div class="absolute top-4 right-4 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-caps text-label-caps">MOQ: 10 Sets</div>
+<div class="absolute bottom-0 left-0 right-0 p-6 gradient-overlay text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+<p class="font-label-caps text-label-caps mb-2">Delivery: 30 Days</p>
+<a href="become-dealer.html" class="w-full py-3 bg-white text-primary rounded-lg font-bold block text-center">Request Sample</a>
+</div>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary">BabyCool Lavender Dress</h3>
+<p class="text-on-surface-variant font-body-md">Organic Cotton Silk • Premium Gown</p>
+</div>
+</div>
+</section>
+<!-- B2B Logistics / Timeline Section -->
+<section class="py-stack-lg bg-white">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-12 gap-gutter">
+<div class="col-span-5 flex flex-col justify-center">
+<h2 class="font-display-md text-display-md text-primary mb-6" id="logistics">Global Logistics Made Simple</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">We understand the speed of retail. Our streamlined global supply chain ensures your boutique stays ahead of the trend cycle with guaranteed delivery windows.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4 p-4 rounded-xl border border-outline-variant hover:border-primary transition-colors glass-card" id="shipping">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">local_shipping</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">Expected Delivery Timeline</h4>
+<p class="text-sm text-on-surface-variant">Average 12-18 business days for APAC regions.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-xl border border-outline-variant hover:border-primary transition-colors glass-card">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<div>
+<h4 class="font-bold text-primary">Quality Assurance Protocol</h4>
+<p class="text-sm text-on-surface-variant">3-stage inspection before dispatch.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-span-7 grid grid-cols-2 gap-gutter">
+<div class="glass-card p-stack-md rounded-3xl hover-lift">
+<span class="font-label-caps text-label-caps text-secondary mb-4 block">Process</span>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">Sample to Store</h3>
+<p class="text-on-surface-variant mb-6">Order curated sample kits before committing to bulk. All sample costs are credited towards your first wholesale order over $5,000.</p>
+<a class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all" href="become-dealer.html">Order Sample Kit <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<div class="bg-inverse-surface p-stack-md rounded-3xl text-white hover-lift relative overflow-hidden">
+<div class="relative z-10">
+<span class="font-label-caps text-label-caps text-primary-fixed-dim mb-4 block">Pre-Order</span>
+<h3 class="font-headline-lg text-headline-lg mb-4">Exclusive Early Access</h3>
+<p class="opacity-70 mb-6">Secure the Summer 2024 range with a 30% deposit. Ensure your inventory is ready before the season peaks.</p>
+<a href="become-dealer.html" class="bg-white text-primary px-8 py-3 rounded-full font-bold inline-block text-center">Contact Sales</a>
+</div>
+<div class="absolute -bottom-10 -right-10 w-40 h-40 bg-primary opacity-20 blur-3xl"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Brand Marquee -->
+<section class="py-20 border-y border-outline-variant/30 bg-surface-container-low overflow-hidden">
+<div class="marquee-container">
+<div class="marquee-content flex gap-20 px-10 items-center grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-default">
+<span class="font-display-md text-display-md font-bold tracking-tighter">VOGUE</span>
+<span class="font-display-md text-display-md font-bold tracking-tighter">BAZAAR</span>
+<span class="font-display-md text-display-md font-bold tracking-tighter">TEXTILE CO.</span>
+<span class="font-display-md text-display-md font-bold tracking-tighter">MILAN LUXE</span>
+<span class="font-display-md text-display-md font-bold tracking-tighter">FABRIC HUB</span>
+<span class="font-display-md text-display-md font-bold tracking-tighter">GUILD</span>
+</div>
+<!-- Duplicate for seamless scroll -->
+<div class="marquee-content flex gap-20 px-10 items-center grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-default">
+<span class="font-display-md text-display-md font-bold tracking-tighter">VOGUE</span>
+<span class="font-display-md text-display-md font-bold tracking-tighter">BAZAAR</span>
+<span class="font-display-md text-display-md font-bold tracking-tighter">TEXTILE CO.</span>
+<span class="font-display-md text-display-md font-bold tracking-tighter">MILAN LUXE</span>
+<span class="font-display-md text-display-md font-bold tracking-tighter">FABRIC HUB</span>
+<span class="font-display-md text-display-md font-bold tracking-tighter">GUILD</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<!-- PREMIUM FOOTER -->
+<footer class="bg-[#FCFAF8] text-[#1A1A1A] relative overflow-hidden border-t border-[#6B2C91]/12 pt-24 pb-10">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Top Section -->
+<div class="grid grid-cols-12 gap-10 mb-20">
+<!-- Brand Column -->
+<div class="col-span-12 md:col-span-5 lg:col-span-4 space-y-7">
+<div class="flex items-center gap-4">
+<a href="index.html" class="inline-block cursor-hover">
+    <img src="assets/images/logo.png" alt="Shakti Traders Logo" class="h-16 w-auto object-contain">
+</a>
+</div>
+<h3 class="font-serif italic text-[28px] text-[#6B2C91] leading-tight">Shakti Traders</h3>
+<p class="text-[#1A1A1A]/60 text-[14px] leading-relaxed max-w-sm">Manufacturing legacy since 1994. Curating premium kids' wear for India's most discerning retailers — blending tradition with contemporary luxury.</p>
+<!-- Socials -->
+<div class="flex items-center gap-3 pt-2">
+<a href="https://wa.me/919423124075" target="_blank" class="w-10 h-10 rounded-full border border-[#6B2C91]/20 flex items-center justify-center text-[#6B2C91]/70 hover:bg-[#6B2C91] hover:border-[#6B2C91] hover:text-white transition-all duration-300 cursor-hover">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+</a>
+<a href="#" class="w-10 h-10 rounded-full border border-[#6B2C91]/20 flex items-center justify-center text-[#6B2C91]/70 hover:bg-[#6B2C91] hover:border-[#6B2C91] hover:text-white transition-all duration-300 cursor-hover">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+</a>
+<a href="#" class="w-10 h-10 rounded-full border border-[#6B2C91]/20 flex items-center justify-center text-[#6B2C91]/70 hover:bg-[#6B2C91] hover:border-[#6B2C91] hover:text-white transition-all duration-300 cursor-hover">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+</a>
+</div>
+</div>
+
+<!-- Quick Links -->
+<div class="col-span-6 md:col-span-3 lg:col-span-2 space-y-6">
+<h5 class="text-[#6B2C91] font-display font-bold text-[15px] tracking-wide">Company</h5>
+<nav class="flex flex-col space-y-3.5">
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="about.html">About Us</a>
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="about.html#factory">Our Factory</a>
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="collections.html">Collections</a>
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="become-dealer.html">Careers</a>
+</nav>
+</div>
+
+<!-- Wholesale -->
+<div class="col-span-6 md:col-span-3 lg:col-span-2 space-y-6">
+<h5 class="text-[#6B2C91] font-display font-bold text-[15px] tracking-wide">Wholesale</h5>
+<nav class="flex flex-col space-y-3.5">
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="wholesale-catalog.html">Bulk Catalogue</a>
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="become-dealer.html">Become Dealer</a>
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="new-arrivals.html#shipping">Shipping Info</a>
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="become-dealer.html#terms">Terms of Service</a>
+</nav>
+</div>
+
+<!-- Contact -->
+<div class="col-span-12 lg:col-span-4 space-y-6">
+<h5 class="text-[#6B2C91] font-display font-bold text-[15px] tracking-wide">Headquarters</h5>
+<div class="space-y-4 text-[14px] text-[#1A1A1A]/60">
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[#6B2C91] text-[20px] mt-0.5">location_on</span>
+<p>Sahakar Nagar, Opp. New Cotton Market,<br/>Shiv Krupa Residence, Amravati, MH</p>
+</div>
+<div class="flex items-center gap-3.5">
+<span class="material-symbols-outlined text-[#6B2C91] text-[20px]">mail</span>
+<a href="mailto:wholesale@shaktiroyale.com" class="hover:text-[#6B2C91] transition-colors cursor-hover">wholesale@shaktiroyale.com</a>
+</div>
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[#6B2C91] text-[20px] mt-0.5">call</span>
+<div class="flex flex-col text-[14px]">
+<a href="tel:+919423124075" class="hover:text-[#6B2C91] transition-colors cursor-hover">Shankar: +91 94231 24075</a>
+<a href="tel:+919422855203" class="hover:text-[#6B2C91] transition-colors cursor-hover">Rajkumar: +91 94228 55203</a>
+</div>
+</div>
+</div>
+<!-- Newsletter -->
+<div class="pt-4">
+<p class="text-[12px] uppercase tracking-[0.15em] text-[#1A1A1A]/40 font-semibold mb-3">Get New Arrivals</p>
+<div class="flex gap-2">
+<input type="email" placeholder="Your email" class="flex-1 px-4 py-3 bg-[#FCFAF8] border border-[#6B2C91]/20 rounded-full text-[13px] text-[#1A1A1A] placeholder:text-[#1A1A1A]/30 focus:outline-none focus:border-[#6B2C91]/50 transition-colors">
+<button class="px-5 py-3 bg-[#6B2C91] hover:bg-[#4F1E73] rounded-full transition-colors cursor-hover">
+<span class="material-symbols-outlined text-white text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Bottom Bar -->
+<div class="pt-8 pb-2 border-t border-[#6B2C91]/12 flex flex-col md:flex-row justify-between items-center gap-5">
+<p class="text-[12px] text-[#1A1A1A]/40">© 2026 Shakti Traders. All Rights Reserved.</p>
+<div class="flex flex-wrap gap-6 text-[12px] text-[#1A1A1A]/40 justify-center">
+<a class="hover:text-[#6B2C91] transition-colors cursor-hover" href="become-dealer.html#privacy">Privacy Policy</a>
+<a class="hover:text-[#6B2C91] transition-colors cursor-hover" href="become-dealer.html#terms">Terms of Service</a>
+<a class="hover:text-[#6B2C91] transition-colors cursor-hover" href="new-arrivals.html#shipping">Shipping Policy</a>
+<a class="hover:text-[#6B2C91] transition-colors cursor-hover" href="become-dealer.html#contact">Contact</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Lenis Smooth Scroll -->
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+        // Simple Horizontal Scroll Parallax Effect
+        const scrollContainer = document.getElementById('parallax-scroll');
+        const prevBtn = document.getElementById('parallax-prev');
+        const nextBtn = document.getElementById('parallax-next');
+
+        if (scrollContainer) {
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            scrollContainer.addEventListener('mousedown', (e) => {
+                isDown = true;
+                startX = e.pageX - scrollContainer.offsetLeft;
+                scrollLeft = scrollContainer.scrollLeft;
+            });
+            scrollContainer.addEventListener('mouseleave', () => {
+                isDown = false;
+            });
+            scrollContainer.addEventListener('mouseup', () => {
+                isDown = false;
+            });
+            scrollContainer.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - scrollContainer.offsetLeft;
+                const walk = (x - startX) * 2;
+                scrollContainer.scrollLeft = scrollLeft - walk;
+            });
+
+            if (prevBtn && nextBtn) {
+                prevBtn.addEventListener('click', () => {
+                    scrollContainer.scrollBy({ left: -430, behavior: 'smooth' });
+                });
+                nextBtn.addEventListener('click', () => {
+                    scrollContainer.scrollBy({ left: 430, behavior: 'smooth' });
+                });
+            }
+        }
+    </script>
+</body>
+</html>

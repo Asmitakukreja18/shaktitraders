@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Legacy | Shakti Royale</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/main.css">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#d5baff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-glass": "rgba(255, 255, 255, 0.7)",
+                        "on-background": "#121c2a",
+                        "on-surface-variant": "#4a4453",
+                        "outline-muted": "#ccc3d5",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#ffdad8",
+                        "surface-container-high": "#dfe9fc",
+                        "primary-fixed": "#ecdcff",
+                        "background": "#f8f9ff",
+                        "on-tertiary-fixed": "#410006",
+                        "surface-tint": "#7341c1",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#ebf1ff",
+                        "surface-bright": "#f8f9ff",
+                        "inverse-primary": "#d5baff",
+                        "primary-container": "#561ea3",
+                        "surface-dim": "#d0daee",
+                        "surface-container-highest": "#d9e3f7",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#91061c",
+                        "inverse-surface": "#27313f",
+                        "tertiary-fixed-dim": "#ffb3b0",
+                        "tertiary": "#61000e",
+                        "secondary-container": "#346cef",
+                        "on-error": "#ffffff",
+                        "primary": "#3d0081",
+                        "outline": "#7c7484",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#8b0019",
+                        "on-secondary-fixed-variant": "#003ea7",
+                        "surface-container": "#e6eeff",
+                        "on-primary-fixed-variant": "#5a24a7",
+                        "secondary-fixed": "#dbe1ff",
+                        "surface-container-low": "#eff3ff",
+                        "secondary": "#0051d5",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#d9e3f7",
+                        "surface": "#f8f9ff",
+                        "on-primary-fixed": "#270057",
+                        "secondary-fixed-dim": "#b4c5ff",
+                        "on-secondary-fixed": "#00174b",
+                        "outline-variant": "#ccc3d5",
+                        "on-secondary-container": "#fefcff",
+                        "on-tertiary-container": "#ff908e",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#121c2a",
+                        "on-primary-container": "#c29eff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "container-max": "1440px",
+                        "stack-lg": "48px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-desktop": "80px",
+                        "stack-md": "32px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Inter"],
+                        "display-lg": ["Montserrat"],
+                        "body-md": ["Inter"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "display-md": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-md": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed-dim selection:text-on-primary-fixed overflow-x-hidden">
+<!-- TopNavBar Shell -->
+<nav class="fixed top-0 w-full z-50 bg-[#FCFAF8]/85 backdrop-blur-md border-b border-[#6B2C91]/8 shadow-sm transition-all duration-500 ease-out h-24" id="mainNav">
+    <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-full max-w-container-max mx-auto">
+        <!-- Brand Logo & Subtitle -->
+        <div class="flex flex-col items-start justify-center shrink-0">
+            <a href="index.html" class="cursor-hover">
+                <img src="assets/images/logo.png" alt="Shakti Traders Logo" class="h-10 w-auto object-contain">
+            </a>
+            <span class="text-[7px] tracking-[0.18em] text-[#6B2C91]/70 uppercase font-bold mt-1.5 leading-none">EST. 1994 | MANUFACTURING EXCELLENCE</span>
+        </div>
+
+        <!-- Centered Navigation Links -->
+        <div class="hidden lg:flex items-center space-x-10">
+            <div class="relative group">
+                <a class="text-[#1A1A1A]/80 hover:text-[#6B2C91] font-label-caps text-label-caps transition-colors duration-300 flex items-center gap-1 cursor-hover font-semibold" href="collections.html">
+                    <span>Collections</span>
+                    <span class="material-symbols-outlined text-[16px]">keyboard_arrow_down</span>
+                </a>
+            </div>
+            <a class="text-[#1A1A1A]/80 hover:text-[#6B2C91] font-label-caps text-label-caps transition-colors duration-300 cursor-hover font-semibold" href="new-arrivals.html">Fabrics</a>
+            <a class="text-[#6B2C91] font-label-caps text-label-caps transition-colors duration-300 cursor-hover font-bold" href="about.html">About Us</a>
+            <a class="text-[#1A1A1A]/80 hover:text-[#6B2C91] font-label-caps text-label-caps transition-colors duration-300 cursor-hover font-semibold" href="wholesale-catalog.html">Wholesale</a>
+            <a class="text-[#1A1A1A]/80 hover:text-[#6B2C91] font-label-caps text-label-caps transition-colors duration-300 cursor-hover font-semibold" href="become-dealer.html#contact">Contact</a>
+        </div>
+
+        <!-- Trailing Actions -->
+        <div class="flex items-center space-x-6">
+            <div class="hidden md:flex items-center gap-5">
+                <a href="become-dealer.html" class="px-6 py-2.5 bg-[#6B2C91] text-white rounded-full font-label-caps text-[13px] font-bold hover:bg-[#4F1E73] hover:scale-105 transition-all duration-300 shadow-soft-glow flex items-center gap-2 cursor-hover">
+                    <span>Dealer Portal</span>
+                    <span class="material-symbols-outlined text-[18px]">person</span>
+                </a>
+                <a href="wholesale-catalog.html" class="text-[#1A1A1A]/80 hover:text-[#6B2C91] transition-colors cursor-hover">
+                    <span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- SideNavBar (Wholesale Hub) -->
+<aside class="fixed right-0 top-1/2 -translate-y-1/2 w-16 hover:w-64 transition-all duration-300 rounded-l-xl z-40 bg-surface-container-highest/80 backdrop-blur-lg border-l border-white/20 shadow-2xl flex flex-col items-center py-stack-md space-y-gutter group overflow-hidden">
+<div class="flex flex-col items-center group-hover:items-start group-hover:px-6 w-full transition-all">
+<span class="material-symbols-outlined text-primary mb-2">hub</span>
+<div class="hidden group-hover:block transition-all opacity-0 group-hover:opacity-100">
+<p class="font-label-caps text-label-caps font-bold text-primary">Shakti Traders</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-widest">B2B Support</p>
+</div>
+</div>
+<div class="flex flex-col w-full">
+<a class="flex items-center space-x-4 px-4 py-3 text-on-surface-variant hover:bg-surface-container-low transition-colors" href="https://wa.me/919423124075" target="_blank">
+<span class="material-symbols-outlined">chat</span>
+<span class="hidden group-hover:inline font-label-caps text-label-caps">WhatsApp Support</span>
+</a>
+<a class="flex items-center space-x-4 px-4 py-3 text-on-surface-variant hover:bg-surface-container-low transition-colors" href="wholesale-catalog.html">
+<span class="material-symbols-outlined">download</span>
+<span class="hidden group-hover:inline font-label-caps text-label-caps">Download Catalogue</span>
+</a>
+<a class="flex items-center space-x-4 px-4 py-3 text-on-surface-variant hover:bg-surface-container-low transition-colors" href="become-dealer.html">
+<span class="material-symbols-outlined">request_quote</span>
+<span class="hidden group-hover:inline font-label-caps text-label-caps">Bulk Enquiry</span>
+</a>
+</div>
+</aside>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[80vh] flex items-center justify-center overflow-hidden bg-inverse-surface">
+<div class="absolute inset-0 z-0 opacity-40">
+<div class="w-full h-full bg-cover bg-center" style="background-image: url('assets/images/WhatsApp Image 2026-08-02 at 12.19.04 AM.jpeg')"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile">
+<h1 class="font-display-lg text-display-lg text-white mb-6 uppercase tracking-tight">Our Legacy,<br/><span class="text-primary-fixed-dim">Your Growth</span></h1>
+<p class="font-body-lg text-body-lg text-surface-container-low max-w-2xl mx-auto opacity-80">Empowering the global textile ecosystem since 1998 with uncompromising quality and innovative manufacturing standards.</p>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-white text-4xl">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- Timeline Story Section -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative">
+<div class="absolute left-1/2 top-0 bottom-0 w-px timeline-line -translate-x-1/2 hidden md:block"></div>
+<div class="space-y-40">
+<!-- 1998 -->
+<div class="flex flex-col md:flex-row items-center gap-20 text-reveal">
+<div class="md:w-1/2 order-2 md:order-1">
+<div class="glass-card p-10 rounded-2xl hover-lift transition-all">
+<span class="text-primary font-display-md text-display-md block mb-4">1998</span>
+<h3 class="font-headline-lg text-headline-lg mb-4 text-primary">The Genesis</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">Shakti Traders was founded in the heart of the textile district with a simple mission: to provide artisanal quality fabrics to independent retailers. Starting with just two looms and a vision for excellence.</p>
+</div>
+</div>
+<div class="md:w-1/2 order-1 md:order-2 parallax-wrap">
+<img class="w-full h-[400px] object-cover rounded-2xl shadow-2xl" src="assets/images/WhatsApp Image 2026-08-02 at 12.12.57 AM.jpeg"/>
+</div>
+</div>
+<!-- 2012 -->
+<div class="flex flex-col md:flex-row items-center gap-20 text-reveal">
+<div class="md:w-1/2 parallax-wrap">
+<img class="w-full h-[400px] object-cover rounded-2xl shadow-2xl" id="factory" src="assets/images/WhatsApp Image 2026-08-02 at 12.19.04 AM.jpeg"/>
+</div>
+<div class="md:w-1/2">
+<div class="glass-card p-10 rounded-2xl hover-lift transition-all">
+<span class="text-primary font-display-md text-display-md block mb-4">2012</span>
+<h3 class="font-headline-lg text-headline-lg mb-4 text-primary">Digital Expansion</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">Scaling beyond regional boundaries, we integrated computerized quality control and expanded our footprint into international markets, becoming a trusted partner for global fashion houses.</p>
+</div>
+</div>
+</div>
+<!-- Today -->
+<div class="flex flex-col md:flex-row items-center gap-20 text-reveal">
+<div class="md:w-1/2 order-2 md:order-1">
+<div class="glass-card p-10 rounded-2xl hover-lift transition-all">
+<span class="text-primary font-display-md text-display-md block mb-4">Present</span>
+<h3 class="font-headline-lg text-headline-lg mb-4 text-primary">Shakti Royale</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">Today, we stand as a leader in premium textile B2B solutions. Shakti Royale represents the pinnacle of our journey—combining royal textile heritage with modern digital efficiency for the discerning dealer.</p>
+</div>
+</div>
+<div class="md:w-1/2 order-1 md:order-2 parallax-wrap">
+<img class="w-full h-[400px] object-cover rounded-2xl shadow-2xl" src="assets/images/WhatsApp Image 2026-08-02 at 12.14.25 AM (1).jpeg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership Section -->
+<section class="bg-surface-container py-32">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-20 text-reveal">
+<h2 class="font-display-md text-display-md text-primary mb-4">The Visionaries</h2>
+<p class="text-on-surface-variant font-body-lg max-w-xl mx-auto">Behind every weave is a leadership team committed to textile excellence and wholesale integrity.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Leader 1 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-lg hover-lift transition-all glow-hover group text-reveal">
+<div class="h-80 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/images/WhatsApp Image 2026-08-02 at 12.19.32 AM (1).jpeg"/>
+</div>
+<div class="p-8">
+<h4 class="font-headline-lg text-headline-lg text-primary">Rajesh Sharma</h4>
+<p class="text-on-surface-variant font-label-caps text-label-caps mb-4">Founder &amp; Chairman</p>
+<p class="text-on-surface-variant font-body-md text-sm">A textile veteran with over 30 years of experience in handloom and mill production.</p>
+</div>
+</div>
+<!-- Leader 2 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-lg hover-lift transition-all glow-hover group text-reveal" style="transition-delay: 100ms;">
+<div class="h-80 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/images/WhatsApp Image 2026-08-02 at 12.19.32 AM (2).jpeg"/>
+</div>
+<div class="p-8">
+<h4 class="font-headline-lg text-headline-lg text-primary">Ananya Roy</h4>
+<p class="text-on-surface-variant font-label-caps text-label-caps mb-4">Head of Operations</p>
+<p class="text-on-surface-variant font-body-md text-sm">Driving digital transformation and global logistics optimization for our B2B partners.</p>
+</div>
+</div>
+<!-- Leader 3 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-lg hover-lift transition-all glow-hover group text-reveal" style="transition-delay: 200ms;">
+<div class="h-80 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/images/WhatsApp Image 2026-08-02 at 12.19.33 AM (1).jpeg"/>
+</div>
+<div class="p-8">
+<h4 class="font-headline-lg text-headline-lg text-primary">Vikram Singh</h4>
+<p class="text-on-surface-variant font-label-caps text-label-caps mb-4">Creative Director</p>
+<p class="text-on-surface-variant font-body-md text-sm">Overseeing the fusion of traditional Indian motifs with contemporary fabric technology.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quality Assurance Bento Grid -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 text-reveal">
+<div>
+<h2 class="font-display-md text-display-md text-primary mb-4">Uncompromising Quality</h2>
+<p class="text-on-surface-variant font-body-lg">Every meter of fabric undergoes a rigorous 12-point inspection process.</p>
+</div>
+<div class="mt-8 md:mt-0">
+<a href="become-dealer.html" class="px-8 py-3 border-2 border-primary text-primary font-label-caps text-label-caps rounded-full hover:bg-primary hover:text-on-primary transition-all uppercase tracking-widest inline-block text-center">Our Standards</a>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-6 h-[700px]">
+<div class="col-span-8 relative group cursor-help overflow-hidden rounded-2xl text-reveal">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="assets/images/WhatsApp Image 2026-08-02 at 12.19.33 AM (2).jpeg"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="glass-card p-6 text-center max-w-xs transform translate-y-10 group-hover:translate-y-0 transition-transform">
+<h5 class="text-primary font-bold mb-2">Micro-Precision</h5>
+<p class="text-sm">We use 1000x magnification to ensure zero surface defects in every batch.</p>
+</div>
+</div>
+</div>
+<div class="col-span-4 relative group cursor-help overflow-hidden rounded-2xl text-reveal" style="transition-delay: 100ms;">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="assets/images/WhatsApp Image 2026-08-02 at 12.19.35 AM (1).jpeg"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="glass-card p-6 text-center max-w-xs transform translate-y-10 group-hover:translate-y-0 transition-transform">
+<h5 class="text-primary font-bold mb-2">Reinforced Seams</h5>
+<p class="text-sm">Double-needle lockstitch technology ensures extreme durability for high-end upholstery.</p>
+</div>
+</div>
+</div>
+<div class="col-span-4 relative group cursor-help overflow-hidden rounded-2xl text-reveal" style="transition-delay: 200ms;">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="assets/images/WhatsApp Image 2026-08-02 at 12.19.35 AM (2).jpeg"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="glass-card p-6 text-center max-w-xs transform translate-y-10 group-hover:translate-y-0 transition-transform">
+<h5 class="text-primary font-bold mb-2">Color Integrity</h5>
+<p class="text-sm">Level 5 color-fastness testing guarantees shades remain vibrant for decades.</p>
+</div>
+</div>
+</div>
+<div class="col-span-8 relative group cursor-help overflow-hidden rounded-2xl text-reveal" style="transition-delay: 300ms;">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="assets/images/WhatsApp Image 2026-08-02 at 12.19.01 AM.jpeg"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="glass-card p-6 text-center max-w-xs transform translate-y-10 group-hover:translate-y-0 transition-transform">
+<h5 class="text-primary font-bold mb-2">12-Point Inspection</h5>
+<p class="text-sm">Final human-eye verification ensures that Shakti Royale standards are met before shipping.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Presence Section -->
+<section class="py-32 bg-inverse-surface text-white overflow-hidden relative">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="text-reveal">
+<h2 class="font-display-md text-display-md mb-6">Global Reach,<br/><span class="text-primary-fixed-dim">Local Foundation</span></h2>
+<p class="font-body-lg text-outline-variant mb-12">From our roots in Amravati to our showrooms in Mumbai, Nagpur, Jaipur, and our international office in Bali, Indonesia, we bridge the gap between premium kids' wear design and global wholesale demand.</p>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<h4 class="text-4xl font-bold text-white">25+</h4>
+<p class="font-label-caps text-label-caps text-outline-variant">Years Legacy</p>
+</div>
+<div>
+<h4 class="text-4xl font-bold text-white">500k+</h4>
+<p class="font-label-caps text-label-caps text-outline-variant">Meters Monthly</p>
+</div>
+<div>
+<h4 class="text-4xl font-bold text-white">1200+</h4>
+<p class="font-label-caps text-label-caps text-outline-variant">Wholesale Dealers</p>
+</div>
+<div>
+<h4 class="text-4xl font-bold text-white">14</h4>
+<p class="font-label-caps text-label-caps text-outline-variant">Countries Served</p>
+</div>
+</div>
+</div>
+<div class="text-reveal relative">
+<div class="aspect-square bg-primary-container/20 rounded-full flex items-center justify-center p-12">
+<div class="w-full h-full rounded-full border border-primary-fixed-dim/30 animate-[spin_60s_linear_infinite] relative">
+<!-- Map Mockup -->
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-[180px] text-primary-fixed-dim opacity-30">public</span>
+</div>
+<!-- Pulse points -->
+<div class="absolute top-1/4 left-1/4 w-3 h-3 bg-primary-fixed-dim rounded-full animate-ping"></div>
+<div class="absolute bottom-1/3 right-1/4 w-3 h-3 bg-primary-fixed-dim rounded-full animate-ping delay-700"></div>
+<div class="absolute top-1/2 left-1/3 w-3 h-3 bg-primary-fixed-dim rounded-full animate-ping delay-1000"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-margin-mobile">
+<div class="max-w-4xl mx-auto glass-card rounded-[40px] p-16 text-center text-reveal shadow-soft-glow">
+<h2 class="font-display-md text-display-md text-primary mb-6">Partner With Excellence</h2>
+<p class="font-body-lg text-on-surface-variant mb-10">Join our network of elite retailers and experience the Shakti Royale advantage in your boutique today.</p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<a href="become-dealer.html" class="px-10 py-4 bg-primary text-on-primary rounded-full font-label-caps text-label-caps hover:scale-105 transition-all shadow-lg inline-block text-center">Become a Dealer</a>
+<a href="become-dealer.html" class="px-10 py-4 border-2 border-primary text-primary rounded-full font-label-caps text-label-caps hover:bg-surface-container-low transition-all inline-block text-center">Request Samples</a>
+</div>
+</div>
+</section>
+</main>
+<!-- PREMIUM FOOTER -->
+<footer class="bg-[#FCFAF8] text-[#1A1A1A] relative overflow-hidden border-t border-[#6B2C91]/12 pt-24 pb-10">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Top Section -->
+<div class="grid grid-cols-12 gap-10 mb-20">
+<!-- Brand Column -->
+<div class="col-span-12 md:col-span-5 lg:col-span-4 space-y-7">
+<div class="flex items-center gap-4">
+<a href="index.html" class="inline-block cursor-hover">
+    <img src="assets/images/logo.png" alt="Shakti Traders Logo" class="h-16 w-auto object-contain">
+</a>
+</div>
+<h3 class="font-serif italic text-[28px] text-[#6B2C91] leading-tight">Shakti Traders</h3>
+<p class="text-[#1A1A1A]/60 text-[14px] leading-relaxed max-w-sm">Manufacturing legacy since 1994. Curating premium kids' wear for India's most discerning retailers — blending tradition with contemporary luxury.</p>
+<!-- Socials -->
+<div class="flex items-center gap-3 pt-2">
+<a href="https://wa.me/919423124075" target="_blank" class="w-10 h-10 rounded-full border border-[#6B2C91]/20 flex items-center justify-center text-[#6B2C91]/70 hover:bg-[#6B2C91] hover:border-[#6B2C91] hover:text-white transition-all duration-300 cursor-hover">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+</a>
+<a href="#" class="w-10 h-10 rounded-full border border-[#6B2C91]/20 flex items-center justify-center text-[#6B2C91]/70 hover:bg-[#6B2C91] hover:border-[#6B2C91] hover:text-white transition-all duration-300 cursor-hover">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+</a>
+<a href="#" class="w-10 h-10 rounded-full border border-[#6B2C91]/20 flex items-center justify-center text-[#6B2C91]/70 hover:bg-[#6B2C91] hover:border-[#6B2C91] hover:text-white transition-all duration-300 cursor-hover">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+</a>
+</div>
+</div>
+
+<!-- Quick Links -->
+<div class="col-span-6 md:col-span-3 lg:col-span-2 space-y-6">
+<h5 class="text-[#6B2C91] font-display font-bold text-[15px] tracking-wide">Company</h5>
+<nav class="flex flex-col space-y-3.5">
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="about.html">About Us</a>
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="about.html#factory">Our Factory</a>
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="collections.html">Collections</a>
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="become-dealer.html">Careers</a>
+</nav>
+</div>
+
+<!-- Wholesale -->
+<div class="col-span-6 md:col-span-3 lg:col-span-2 space-y-6">
+<h5 class="text-[#6B2C91] font-display font-bold text-[15px] tracking-wide">Wholesale</h5>
+<nav class="flex flex-col space-y-3.5">
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="wholesale-catalog.html">Bulk Catalogue</a>
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="become-dealer.html">Become Dealer</a>
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="new-arrivals.html#shipping">Shipping Info</a>
+<a class="text-[#1A1A1A]/60 hover:text-[#6B2C91] transition-colors duration-300 text-[14px] cursor-hover" href="become-dealer.html#terms">Terms of Service</a>
+</nav>
+</div>
+
+<!-- Contact -->
+<div class="col-span-12 lg:col-span-4 space-y-6">
+<h5 class="text-[#6B2C91] font-display font-bold text-[15px] tracking-wide">Headquarters</h5>
+<div class="space-y-4 text-[14px] text-[#1A1A1A]/60">
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[#6B2C91] text-[20px] mt-0.5">location_on</span>
+<p>Sahakar Nagar, Opp. New Cotton Market,<br/>Shiv Krupa Residence, Amravati, MH</p>
+</div>
+<div class="flex items-center gap-3.5">
+<span class="material-symbols-outlined text-[#6B2C91] text-[20px]">mail</span>
+<a href="mailto:wholesale@shaktiroyale.com" class="hover:text-[#6B2C91] transition-colors cursor-hover">wholesale@shaktiroyale.com</a>
+</div>
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[#6B2C91] text-[20px] mt-0.5">call</span>
+<div class="flex flex-col text-[14px]">
+<a href="tel:+919423124075" class="hover:text-[#6B2C91] transition-colors cursor-hover">Shankar: +91 94231 24075</a>
+<a href="tel:+919422855203" class="hover:text-[#6B2C91] transition-colors cursor-hover">Rajkumar: +91 94228 55203</a>
+</div>
+</div>
+</div>
+<!-- Newsletter -->
+<div class="pt-4">
+<p class="text-[12px] uppercase tracking-[0.15em] text-[#1A1A1A]/40 font-semibold mb-3">Get New Arrivals</p>
+<div class="flex gap-2">
+<input type="email" placeholder="Your email" class="flex-1 px-4 py-3 bg-[#FCFAF8] border border-[#6B2C91]/20 rounded-full text-[13px] text-[#1A1A1A] placeholder:text-[#1A1A1A]/30 focus:outline-none focus:border-[#6B2C91]/50 transition-colors">
+<button class="px-5 py-3 bg-[#6B2C91] hover:bg-[#4F1E73] rounded-full transition-colors cursor-hover">
+<span class="material-symbols-outlined text-white text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Bottom Bar -->
+<div class="pt-8 pb-2 border-t border-[#6B2C91]/12 flex flex-col md:flex-row justify-between items-center gap-5">
+<p class="text-[12px] text-[#1A1A1A]/40">© 2026 Shakti Traders. All Rights Reserved.</p>
+<div class="flex flex-wrap gap-6 text-[12px] text-[#1A1A1A]/40 justify-center">
+<a class="hover:text-[#6B2C91] transition-colors cursor-hover" href="become-dealer.html#privacy">Privacy Policy</a>
+<a class="hover:text-[#6B2C91] transition-colors cursor-hover" href="become-dealer.html#terms">Terms of Service</a>
+<a class="hover:text-[#6B2C91] transition-colors cursor-hover" href="new-arrivals.html#shipping">Shipping Policy</a>
+<a class="hover:text-[#6B2C91] transition-colors cursor-hover" href="become-dealer.html#contact">Contact</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Lenis Smooth Scroll -->
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+        // Subtle Parallax Effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxImages = document.querySelectorAll('.parallax-wrap img');
+            
+            parallaxImages.forEach(img => {
+                const speed = 0.05;
+                const rect = img.parentElement.getBoundingClientRect();
+                const offset = rect.top * speed;
+                img.style.transform = `translateY(${offset}px) scale(1.1)`;
+            });
+        });
+    </script>
+</body>
+</html>
